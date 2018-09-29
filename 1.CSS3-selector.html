@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .father .example:nth-of-type(1) p[color~="red"]{color: red;}
+        .father .example:nth-of-type(2) p[color*='red']{color: blue;}
+        .father .example:nth-of-type(3) p[color^='re']{color: yellow;}
+        .father .example:nth-of-type(4) p[color$='e']{color: green;}
+        .father .example:nth-of-type(5) p[color|='red']{color: pink;}
+    </style>
+    <div class='father'>
+        <div class='example'>
+            <p color='red'>你好 再见</p>
+            <p color='redblueyellow'>祝你幸福</p>
+            <p color='blue'>呵呵呵</p>
+        </div>
+        <hr>
+        <div class='example'>
+            <p color='red'>你好 再见</p>
+            <p color='redblueyellow'>祝你幸福</p>
+            <p color='blue'>呵呵呵</p>
+        </div>
+        <hr>
+        <div class='example'>
+            <p color='red'>你好 再见</p>
+            <p color='redblueyellow'>祝你幸福</p>
+            <p color='blue'>呵呵呵</p>
+        </div>
+        <hr>
+        <div class='example'>
+            <p color='red'>你好 再见</p>
+            <p color='redblueyellow'>祝你幸福</p>
+            <p color='blue'>呵呵呵</p>
+        </div>
+        <hr>
+        <div class='example'>
+            <p color='red-'>你好 再见</p>
+            <p color='redblueyellow'>祝你幸福</p>
+            <p color='blue'>呵呵呵</p>
+        </div>
+        <hr>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <hr>
+    <style>
+        .div .exmaple:first-child p:nth-child(2) {
+            color: red;
+        }
+        .div .exmaple:last-child p:first-of-type{
+            color: blue;
+        }
+        .div .exmaple:nth-child(2) p:nth-of-type(1){
+            color: blue;
+        }
+        .div .exmaple:nth-child(3) div:empty{
+            height: 200px;
+            background: skyblue;
+        }
+        .div .exmaple:nth-child(4) li:nth-child(odd){
+            background: pink;
+        }
+        .div .exmaple:nth-child(4) li:nth-child(event){
+            background: greenyellow;
+        }
+        .div .exmaple:nth-child(4) li:not(:nth-of-type(4)){
+            color: red;
+        } 
+        .div .exmaple:nth-child(5) div:only-of-type{
+            background: greenyellow;
+        }
+        .div .exmaple:nth-child(7) li:nth-last-child(2){
+            background: burlywood;
+        } 
+    </style>
+    <div class="div">
+        <div class='exmaple'>
+            <p>1asdfasdf</p>
+            <p>2fsdafasd</p>
+            <p>3asdfasdf</p>
+        </div>
+        <div class='exmaple'>
+            <div></div>
+            <div></div>
+            <p>1asdfasdf</p>
+            <p>2fsdafasd</p>
+            <p>3asdfasdf</p>
+        </div>
+        <div class='exmaple'>
+            <div></div>
+            <p>1asdfasdf</p>
+            <p>2fsdafasd</p>
+            <p>3asdfasdf</p>
+        </div>
+        <div class='exmaple'>
+            <ul>
+                <li>0-02322</li>
+                <li>0-02322</li>
+                <li>0-02322</li>
+                <li>0-02322</li>
+                <li>0-02322</li>
+                <li>0-02322</li>
+            </ul>
+        </div>
+        <div class='exmaple'>
+            <a></a>
+            <div>afasdfasdfasd</div>
+        </div>
+        <hr>
+        <div class='exmaple'>
+            <ul>
+                <li>0-02322</li>
+                <li>0-02322</li>
+                <li>0-02322</li>
+                <li>0-02322</li>
+                <li>0-02322</li>
+                <li>0-02322</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+
+
+    <style>
+        .three .exmaple:first-child input:enabled{
+            background: red;
+        }
+        .three .exmaple:first-child input:disabled{
+            background: blue;
+        }
+        .three .exmaple:first-child input:checked{
+            height: 50px;
+            width: 50px;
+        }
+        .three .exmaple:first-child input:focus{
+            color: white;
+        }
+        .three .exmaple:first-child p::selection{
+            color: white;
+            background: red;
+        }
+        .three .exmaple:nth-of-type(2) span~li{
+            color: white;
+            background: red;
+        }
+    </style>
+    <div class='three'>
+        <div class='exmaple'>
+            <form>
+                <input type="text">
+                <input type="text" disabled>
+                <input type="checkbox">
+                <input type="checkbox">
+                <p>dasdfasdfazsf</p>
+            </form>
+        </div>
+        <div class='exmaple'>
+            <form>
+                <li>12312312</li>
+                <li>12312312</li>
+                <li>12312312</li>
+                <span></span>
+                <li>12312312</li>
+                <li>12312312</li>
+                <li>12312312</li>
+                <li>12312312</li>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
