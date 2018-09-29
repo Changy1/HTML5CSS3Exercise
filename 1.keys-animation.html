@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @keyframes keys {
+            0% { background-position: 0px 0px;  }
+            12.5% { background-position: -140px 0px;  }
+            25% { background-position: -280px 0px;  }
+            37.5% { background-position: -420px 0px;  }
+            50% { background-position: 0px -82px;  }
+            62.5% { background-position: -140px -82px;  }
+            75% { background-position: -280px -82px;  }
+            87.5% { background-position: -420px -82px;  }
+            100% { background-position: 0px 0px;  }
+        }
+        .demo {
+            width: 140px; height: 82px;
+            border: 1px solid #333;
+            margin: 100px auto;
+            background: url(./images/keys.png) no-repeat;
+            background-position: 0px 0px; 
+
+            animation: keys 0.5s linear 0s infinite;
+
+            animation-timing-function: step-end;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="demo">
+
+    </div>
+    
+</body>
+</html>
